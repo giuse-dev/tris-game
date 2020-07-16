@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Tris!!</title>
+  </head>
+  <body>
+
+    <h1>Gioca a tris contro il computer!</h1>
+
+      <div class="score" id="div-wins">Vittorie: <span id="wins-id">0</span></div>
+      <div class="score" id="div-losses">Sconfitte: <span id="losses-id">0</span><br></div>
+      <div class="score" id="div-draws">Pareggi: <span id="draws-id">0</span></div>
+
+    <div class="choices" id="starter-id">Scegli chi inizia:<br>
+      <input type="radio" id="user-start-id" name="starter-choose">Inizio io<br>
+      <input type="radio" id="comp-start-id" name="starter-choose">Inizia il computer
+    </div>
+
+    <div class="choices" id="symbol-id">Scegli il tuo simbolo:<br>
+      <input type="radio" id="x-symbol-id" name="symbol-choose">X<br>
+      <input type="radio" id="o-symbol-id" name="symbol-choose">O
+    </div>
+
+    <div id="img-div">
+      <img src="../img/tabella_tris.png" usemap="#tablemap">
+
+      <map name="tablemap">
+
+        <area shape="rect" coords="0,0,71,71" onclick="utenteMuove(0,0);">
+        <area shape="rect" coords="75,0,149,71" onclick="utenteMuove(0,1);">
+        <area shape="rect" coords="153,0,224,71" onclick="utenteMuove(0,2);">
+        <area shape="rect" coords="0,75,71,149" onclick="utenteMuove(1,0);">
+        <area shape="rect" coords="75,75,149,149" onclick="utenteMuove(1,1);">
+        <area shape="rect" coords="153,75,224,149" onclick="utenteMuove(1,2);">
+        <area shape="rect" coords="0,153,71,224" onclick="utenteMuove(2,0);">
+        <area shape="rect" coords="75,153,149,224" onclick="utenteMuove(2,1);">
+        <area shape="rect" coords="153,153,224,224" onclick="utenteMuove(2,2);">
+
+      </map>
+    </div>
+
+    <input type="submit" id="start-button" value="Nuova Partita" onclick="giocaNuovaPartita()">
+
+    <p id="message-id">Scegli il tuo simbolo, chi inizia e clicca su Nuova Partita!</p>
+
+    <script type="text/javascript" src="../javascript/script.js">
+
+    </script>
+  </body>
+</html>
