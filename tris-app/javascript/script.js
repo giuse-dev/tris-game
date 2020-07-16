@@ -69,7 +69,7 @@ function pulisciGraficaTabella(){
 //@param int,int la posizione della tabella in cui l'utente ha inserito il simbolo
 function utenteMuove(indiceR, indiceC){
   if(!tabellaAttiva) {
-    alert("devi cliccare su Nuova Partita pirma di poter giocare");
+    alert("devi cliccare su Nuova Partita prima di poter giocare");
   }else if(tabella[indiceR][indiceC] === 'a'){ //se la posizione è libera
     aggiornaGraficaTabella(indiceR, indiceC, utente.simbolo);
     tabella[indiceR][indiceC] = utente.simbolo;
