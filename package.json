@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://giuse-dev.github.io/tris-game",
+  "homepage": "http://giuse-dev.github.io/tris-game",
   "dependencies": {
     "gh-pages": "^3.1.0"
   }
