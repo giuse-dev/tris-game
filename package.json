@@ -1,13 +1,13 @@
 {
   "name": "tris-game",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple tris game you can play on your browser",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d tris-app"
   },
   "keywords": [],
-  "author": "",
+  "author": "Giuseppe Lombardo",
   "license": "ISC",
   "homepage": "http://giuse-dev.github.io/tris-game",
   "dependencies": {
