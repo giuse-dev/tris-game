@@ -210,8 +210,8 @@ function aggiornaGraficaTabella(indiceR, indiceC, simbolo){
 function creaImgTag(simbolo){
   let imgTag = document.createElement("img");
 
-  if(simbolo === "x") { imgTag.src = "../img/x.png"; }
-  else { imgTag.src = "../img/o.png"; }
+  if(simbolo === "x") { imgTag.src = "img/x.png"; }
+  else { imgTag.src = "img/o.png"; }
 
   imgTag.width = "65";//px
   imgTag.height = "65";//px
